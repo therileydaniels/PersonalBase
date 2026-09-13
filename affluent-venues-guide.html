@@ -1,0 +1,951 @@
+<title>Affluent Venues Guide</title>
+<meta name="description" content="A curated field guide to upscale venues and spaces where successful, wealthy men spend time — with practical tips on access, timing, and making genuine connections.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ground: #F9F6F1;
+    --surface: #FFFFFF;
+    --surface-alt: #F3EFE8;
+    --border: #E8E2D8;
+    --text: #2C2F36;
+    --text-muted: #7D7A75;
+    --text-light: #A09B94;
+    --gold: #B8955A;
+    --gold-light: #D4BC8A;
+    --gold-faint: rgba(184, 149, 90, 0.08);
+    --navy: #1C2331;
+    --shadow: rgba(44, 47, 54, 0.06);
+    --shadow-md: rgba(44, 47, 54, 0.1);
+    --serif: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+    --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #141820;
+      --surface: #1C2131;
+      --surface-alt: #232839;
+      --border: #2E3447;
+      --text: #E4E2DE;
+      --text-muted: #9B978F;
+      --text-light: #6B675F;
+      --gold: #C9A96E;
+      --gold-light: #A48A56;
+      --gold-faint: rgba(201, 169, 110, 0.1);
+      --navy: #0D1018;
+      --shadow: rgba(0, 0, 0, 0.2);
+      --shadow-md: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #141820;
+    --surface: #1C2131;
+    --surface-alt: #232839;
+    --border: #2E3447;
+    --text: #E4E2DE;
+    --text-muted: #9B978F;
+    --text-light: #6B675F;
+    --gold: #C9A96E;
+    --gold-light: #A48A56;
+    --gold-faint: rgba(201, 169, 110, 0.1);
+    --navy: #0D1018;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --shadow-md: rgba(0, 0, 0, 0.3);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 400;
+    line-height: 1.7;
+    padding-inline: 20px;
+    padding-block: 0 60px;
+  }
+
+  .hero {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-block: 48px 32px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* Table of Contents */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin-top: 36px;
+    margin-bottom: 40px;
+  }
+
+  .toc-title {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 16px;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 6px 24px;
+  }
+
+  .toc-list a {
+    font-size: 0.92rem;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 5px 0;
+    transition: color 0.15s;
+  }
+
+  .toc-list a:hover { color: var(--gold); }
+
+  .toc-num {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gold);
+    min-width: 20px;
+  }
+
+  /* Section styling */
+  .section {
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  .section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .section-number {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .section h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 500;
+    color: var(--text);
+    text-wrap: balance;
+    line-height: 1.25;
+  }
+
+  .section-intro {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    max-width: 600px;
+  }
+
+  /* Venue cards */
+  .venue {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+
+  .venue h3 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .venue-why {
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-family: var(--serif);
+  }
+
+  .venue p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .venue p:last-child { margin-bottom: 0; }
+
+  /* Detail rows */
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .detail-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+
+  .detail-value {
+    font-size: 0.88rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  /* Callout boxes */
+  .callout {
+    background: var(--gold-faint);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+
+  .callout-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .callout p {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+  }
+
+  /* Tips section */
+  .tip-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tip-list li {
+    font-size: 0.9rem;
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.65;
+  }
+
+  .tip-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  /* Search tips */
+  .search-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .search-tag {
+    font-size: 0.78rem;
+    font-family: var(--sans);
+    background: var(--surface-alt);
+    color: var(--text-muted);
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    font-weight: 500;
+  }
+
+  /* Principles section */
+  .principle {
+    margin-bottom: 24px;
+  }
+
+  .principle h4 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .principle p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* Footer */
+  .guide-footer {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .guide-footer p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .guide-footer .note {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 16px;
+    font-style: normal;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .venue { padding: 20px; }
+    .toc { padding: 20px; }
+    .toc-list { grid-template-columns: 1fr; }
+    .detail-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="hero">
+  <div class="hero-eyebrow">A Curated Field Guide</div>
+  <h1>Where Affluent Men Spend Their Time</h1>
+  <p class="hero-sub">Practical research on upscale venues, private spaces, and social settings — with honest advice on access, timing, and making genuine connections.</p>
+</div>
+
+<div class="main">
+
+  <nav class="toc">
+    <div class="toc-title">Contents</div>
+    <ol class="toc-list">
+      <li><a href="#dining"><span class="toc-num">1</span> Fine Dining & Lounges</a></li>
+      <li><a href="#clubs"><span class="toc-num">2</span> Private Clubs & Memberships</a></li>
+      <li><a href="#fitness"><span class="toc-num">3</span> Luxury Fitness & Wellness</a></li>
+      <li><a href="#culture"><span class="toc-num">4</span> Cultural & Charity Events</a></li>
+      <li><a href="#business"><span class="toc-num">5</span> Business & Professional</a></li>
+      <li><a href="#lifestyle"><span class="toc-num">6</span> Luxury Lifestyle & Hobbies</a></li>
+      <li><a href="#travel"><span class="toc-num">7</span> Hotels, Resorts & Travel</a></li>
+      <li><a href="#digital"><span class="toc-num">8</span> Digital & App-Based</a></li>
+      <li><a href="#principles"><span class="toc-num">9</span> Principles for Genuine Connection</a></li>
+    </ol>
+  </nav>
+
+  <!-- Section 1: Fine Dining & Lounges -->
+  <div class="section" id="dining">
+    <div class="section-header">
+      <span class="section-number">1</span>
+      <h2>Fine Dining & Upscale Lounges</h2>
+    </div>
+    <p class="section-intro">Restaurants and bars are the most accessible entry point — no membership required, just a reservation and the right energy.</p>
+
+    <div class="venue">
+      <h3>High-End Steakhouses & Fine Dining</h3>
+      <div class="venue-why">Power dinners, client entertainment, celebration nights</div>
+      <p>Think Nobu, Capital Grille, STK, Ruth's Chris, Mastro's, or your city's equivalent independently owned fine dining spots. Wealthy men frequent these for business dinners, date nights, and social gatherings. The bar area is often more accessible and social than the dining room — a solo seat at the bar naturally invites conversation.</p>
+      <p>Local independent restaurants with a strong reputation often attract more genuine wealth than flashy chains. Look for spots that require reservations weeks out and have a dedicated bar program.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Best Times</span>
+          <span class="detail-value">Thursday–Saturday evenings, 7–10 PM; Happy hour 5–7 PM on weekdays</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Budget</span>
+          <span class="detail-value">$50–150 per visit (bar dining with a cocktail or two)</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Approach</span>
+          <span class="detail-value">Sit at the bar; compliment their drink choice; ask about wine or food recommendations</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Rooftop Bars & Hotel Lounges</h3>
+      <div class="venue-why">After-work unwinding, impressing guests, social scene</div>
+      <p>Rooftop bars at luxury hotels (Four Seasons, W, Ritz-Carlton, Pendry, Thompson) are natural gathering spots for professionals with disposable income. The atmosphere is relaxed but elevated. These spots attract business travelers and local high-earners alike.</p>
+      <p>Look for places with a dress code or "smart casual" requirement — this filters for a more affluent crowd. Arrive early before it gets too crowded and noisy for real conversation.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Best Times</span>
+          <span class="detail-value">Wednesday–Friday, 6–9 PM; Sunday brunch at hotel restaurants</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Budget</span>
+          <span class="detail-value">$30–80 for a couple of craft cocktails</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Search For</span>
+          <span class="detail-value">"Best rooftop bars [your city]," "luxury hotel bars near me"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Whiskey Bars, Cigar Lounges & Wine Bars</h3>
+      <div class="venue-why">Slow-paced socializing, connoisseur culture, quieter networking</div>
+      <p>Cigar lounges and whiskey bars are among the best venues for this specific purpose. They attract a predominantly male, affluent clientele; the pace is slow; and the shared interest (cigars, whiskey, wine) gives you an immediate conversation topic. Many cigar lounges have a "regulars" culture where introductions happen naturally.</p>
+      <p>Wine bars, especially those offering tastings and education events, attract professionals who value experiences over just drinking. These events create structured interaction opportunities.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Best Times</span>
+          <span class="detail-value">Weekday evenings for regulars; weekend afternoons for a relaxed crowd</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Budget</span>
+          <span class="detail-value">$20–60 for drinks; cigar lounges may have membership ($50–200/mo)</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Conversation</span>
+          <span class="detail-value">Ask what they're smoking or drinking — enthusiasts love sharing knowledge</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">How to find these locally</div>
+      <p>Search Google Maps for "fine dining," "cigar lounge," or "whiskey bar" in your area and sort by rating. Check Yelp's "$$$" and "$$$$" filters. Instagram location tags and local lifestyle magazines often highlight the newest upscale spots. OpenTable's "Hot This Week" features trending high-end restaurants.</p>
+      <div class="search-terms">
+        <span class="search-tag">"best fine dining [city]"</span>
+        <span class="search-tag">"cigar lounge near me"</span>
+        <span class="search-tag">"upscale bars [city]"</span>
+        <span class="search-tag">"speakeasy [city]"</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Private Clubs -->
+  <div class="section" id="clubs">
+    <div class="section-header">
+      <span class="section-number">2</span>
+      <h2>Private Clubs & Memberships</h2>
+    </div>
+    <p class="section-intro">The highest concentration of wealth, but the highest barrier to entry. These are where ongoing relationships form, not one-time encounters.</p>
+
+    <div class="venue">
+      <h3>Country Clubs & Golf Clubs</h3>
+      <div class="venue-why">Long-form socializing, business deals, community status</div>
+      <p>Golf is still the dominant social sport among wealthy men. Country clubs offer golf, tennis, dining, and social events in one ecosystem. Many deals are still closed on the course. Even if you don't play, many clubs host social events, holiday parties, and dining nights open to guests.</p>
+      <p>Getting in: some clubs have waitlists of years, but many mid-tier private clubs are actively seeking younger members. Ask about guest passes, "young professional" rates, or social-only memberships (no golf, lower fee).</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Investment</span>
+          <span class="detail-value">$200–1,000/month; initiation fees from $1K–$100K+ depending on tier</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Entry Strategy</span>
+          <span class="detail-value">Attend as a member's guest; many clubs offer trial memberships or open events</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Best For</span>
+          <span class="detail-value">Long-term relationship building; repeat encounters with the same people</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Social & Business Clubs</h3>
+      <div class="venue-why">Curated networking, exclusivity, cross-industry connections</div>
+      <p><strong>Soho House</strong> — Creative professionals, entrepreneurs, media. Present in most major cities. Application-based, $2,400–$4,500/year. Skews younger wealthy. Great restaurants, pools, co-working.</p>
+      <p><strong>The Battery (SF), Core Club (NYC), Jonathan Club (LA)</strong> — City-specific social clubs with high net-worth membership. Mix of old money and new tech/finance wealth.</p>
+      <p><strong>YPO (Young Presidents' Organization)</strong> — Must run a company with $13M+ revenue. If you work in a relevant field, attending YPO-adjacent events or forums is possible.</p>
+      <p><strong>Rotary Club, local Business Roundtables</strong> — More accessible, and attract established business owners. Check for local chapters.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Investment</span>
+          <span class="detail-value">$1,200–$15,000/year depending on club tier</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">How to Access</span>
+          <span class="detail-value">Apply directly; attend open events; get introduced by a current member</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Yacht Clubs & Sailing Clubs</h3>
+      <div class="venue-why">Nautical lifestyle, waterfront socializing, regattas and events</div>
+      <p>You don't need to own a yacht. Many yacht clubs welcome social members who participate in events, volunteering, and dining. Regattas, boat shows, and dock parties are often semi-open. Coastal and lake cities all have these — they're more accessible than you'd think.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Investment</span>
+          <span class="detail-value">Social memberships from $500–$2,000/year at many clubs</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Search For</span>
+          <span class="detail-value">"Yacht club [your city/coast]," "sailing club social membership"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">The guest strategy</div>
+      <p>You don't need your own membership to start. Most private clubs let members bring guests. If you know anyone who belongs to a club — coworkers, family friends, acquaintances — ask to join them for an event or dinner. One genuine visit often leads to introductions that open more doors.</p>
+    </div>
+  </div>
+
+  <!-- Section 3: Fitness -->
+  <div class="section" id="fitness">
+    <div class="section-header">
+      <span class="section-number">3</span>
+      <h2>Luxury Fitness & Wellness</h2>
+    </div>
+    <p class="section-intro">Wealthy men invest heavily in health and fitness — these spaces combine self-improvement with social opportunity.</p>
+
+    <div class="venue">
+      <h3>Premium Gyms & Athletic Clubs</h3>
+      <div class="venue-why">Daily routine, health-conscious high-earners, consistent exposure</div>
+      <p><strong>Equinox</strong> ($200–$350/month) — The benchmark for luxury fitness. Attracts finance, tech, law professionals. The lounge and juice bar areas are social. Classes like cycling and HIIT create small-group bonding.</p>
+      <p><strong>Life Time</strong> ($150–$300/month) — Resort-style athletic clubs with pools, basketball, racquet sports, spa. Strong community feel. Their "Diamond" and "Diamond Plus" tiers attract higher earners.</p>
+      <p><strong>Boutique studios</strong> — CrossFit boxes, Barry's, Rumble, or local boxing gyms in affluent neighborhoods naturally attract residents of those areas. Smaller class sizes mean you see the same faces regularly.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Best Times</span>
+          <span class="detail-value">Early morning (5–7 AM) for executives; lunch for entrepreneurs; evenings vary</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Connection Tip</span>
+          <span class="detail-value">Take the same class at the same time consistently — familiarity breeds conversation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Golf Courses & Driving Ranges</h3>
+      <div class="venue-why">The classic business social sport — four hours of uninterrupted conversation</div>
+      <p>Even public courses attract affluent players. Topgolf and similar driving range entertainment venues are more casual entry points. Many courses offer beginner clinics and leagues — these are structured social environments.</p>
+      <p>If you don't golf, it's worth learning the basics. A golf lesson is $50–150 and gives you a lifelong social tool. Group lessons are themselves networking opportunities.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Investment</span>
+          <span class="detail-value">Topgolf: $30–60/visit; public course: $40–100; lessons: $50–150/hr</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Pro Tip</span>
+          <span class="detail-value">Volunteer to be paired up as a single — courses match solo players into groups</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Tennis & Racquet Clubs, Pickleball</h3>
+      <div class="venue-why">Growing social sport, club culture, league play</div>
+      <p>Tennis and pickleball have surged among affluent professionals. Private clubs with racquet facilities are social hubs, and even public courts in wealthy neighborhoods draw high-income players. League play (USTA, local pickleball leagues) provides regular interaction with the same group.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Investment</span>
+          <span class="detail-value">Public courts: free; club membership: $100–500/month; lessons: $50–100/hr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Cultural Events -->
+  <div class="section" id="culture">
+    <div class="section-header">
+      <span class="section-number">4</span>
+      <h2>Cultural & Charity Events</h2>
+    </div>
+    <p class="section-intro">Philanthropy and arts patronage are central to affluent social life — these events blend purpose with networking in a way that makes conversation natural.</p>
+
+    <div class="venue">
+      <h3>Charity Galas, Fundraisers & Benefit Events</h3>
+      <div class="venue-why">Philanthropy signals values; events are structured for mingling</div>
+      <p>Charity galas are one of the top social venues for meeting wealthy people who care about their community. Organizations like United Way, local hospitals, children's hospitals, universities, and arts organizations all host annual galas. Tickets range from $100 for smaller events to $500+ for major ones.</p>
+      <p>You don't have to attend as a donor — many nonprofits welcome volunteers for events, which gives you behind-the-scenes access to organizers and major donors. Joining a "young professionals" or "junior board" for a nonprofit is an excellent long-term strategy.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">How to Find</span>
+          <span class="detail-value">Follow local nonprofits on social media; check community foundations; Eventbrite "galas"</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Budget</span>
+          <span class="detail-value">$100–500/ticket; volunteering is free and builds deeper connections</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Best Strategy</span>
+          <span class="detail-value">Join a young professionals board — regular meetings with successful mentors</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Art Gallery Openings & Auctions</h3>
+      <div class="venue-why">Cultural sophistication, collector culture, relaxed atmosphere</div>
+      <p>Gallery openings are typically free, serve wine, and attract a well-heeled crowd. Art collectors and enthusiasts tend to be conversational and enjoy discussing what they're looking at. Auction house previews (Christie's, Sotheby's, Heritage Auctions, and local auction houses) are open to the public and draw serious collectors.</p>
+      <p>First Fridays (monthly gallery walk events) exist in many cities and are completely free.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">Usually free; dress smart casual to business casual</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Conversation</span>
+          <span class="detail-value">"What draws you to this piece?" — genuine curiosity works best</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Symphony, Opera, Theater & Museum Events</h3>
+      <div class="venue-why">Season ticket holders, patron circles, intermission mingling</div>
+      <p>The performing arts attract dedicated patrons — many of whom hold season subscriptions and attend donor events. Intermissions at the symphony or opera are natural social moments. Museum benefit galas, exhibition openings, and "members-only" previews are more intimate networking opportunities.</p>
+      <p>Many arts organizations have "young patrons" or "young friends" groups with lower-cost memberships and dedicated social events.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Access</span>
+          <span class="detail-value">Season tickets: $500–2,000; young patrons groups: $100–500/year</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Search For</span>
+          <span class="detail-value">"[City] symphony young patrons," "[City] museum young professionals"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">The volunteer path</div>
+      <p>Volunteering for charity events is one of the most underrated strategies. You meet the organizers (often well-connected community leaders), interact with donors, and demonstrate character — all without spending a dime on tickets. Many long-term relationships start from working together toward a shared cause.</p>
+    </div>
+  </div>
+
+  <!-- Section 5: Business -->
+  <div class="section" id="business">
+    <div class="section-header">
+      <span class="section-number">5</span>
+      <h2>Business & Professional Settings</h2>
+    </div>
+    <p class="section-intro">Where work and social overlap — these spaces attract ambitious, successful professionals naturally.</p>
+
+    <div class="venue">
+      <h3>Industry Conferences & Business Events</h3>
+      <div class="venue-why">Concentrated high-achievers, shared professional interests, after-parties</div>
+      <p>Industry conferences (tech, finance, real estate, medical, legal) draw successful professionals who are open to meeting new people — that's literally why they're there. The most valuable connections happen at after-parties, dinners, and the hotel bar, not during sessions.</p>
+      <p>Real estate investor meetups, startup demo days, and local chamber of commerce events are more accessible versions of this.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">Free (meetups) to $500–2,000 (major conferences); some offer volunteer access</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Where to Find</span>
+          <span class="detail-value">Eventbrite, Meetup.com, local Chamber of Commerce, industry associations</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Upscale Co-Working & Business Lounges</h3>
+      <div class="venue-why">Entrepreneurs, founders, investors working in proximity</div>
+      <p><strong>Industrious, Convene, Chief (women-focused)</strong> — Premium co-working spaces attract founders, consultants, and professionals who can afford to pay more for a better work environment. Many host member events, happy hours, and speaker series.</p>
+      <p><strong>Airport lounges</strong> — Centurion Lounges (Amex Platinum), Polaris (United), First Class lounges. Business travelers with means congregate here. Conversations are natural because everyone is waiting.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Access</span>
+          <span class="detail-value">Co-working: $300–800/month; airport lounges: via premium credit cards or day pass</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Financial District Bars & Restaurants</h3>
+      <div class="venue-why">After-work decompression, deal-closing dinners</div>
+      <p>The bars and restaurants clustered around financial districts, law firm corridors, and medical centers in any city naturally attract high-earning professionals during happy hour. These are regulars-driven spots where showing up consistently puts you in the same orbit as the same people.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Best Times</span>
+          <span class="detail-value">Tuesday–Thursday, 5–8 PM for after-work crowd</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Tip</span>
+          <span class="detail-value">Identify the 2–3 spots near major offices in your city; become a regular at one</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: Lifestyle -->
+  <div class="section" id="lifestyle">
+    <div class="section-header">
+      <span class="section-number">6</span>
+      <h2>Luxury Lifestyle & Hobbies</h2>
+    </div>
+    <p class="section-intro">Shared hobbies create the deepest connections — and these particular hobbies happen to attract wealth.</p>
+
+    <div class="venue">
+      <h3>Car Shows & Exotic Dealerships</h3>
+      <div class="venue-why">Passion-driven, enthusiast culture, high-net-worth buyers</div>
+      <p>Cars & Coffee events (free, usually Saturday mornings) draw exotic car owners who love talking about their vehicles. Exotic car dealership events (Porsche, Ferrari, McLaren, Lamborghini) host launch parties, test drive events, and owner meetups that are often open or loosely invite-based.</p>
+      <p>Concours d'Elegance events (car shows for collectors) are excellent — attendees are passionate and social. Local car clubs for specific brands attract loyal, affluent communities.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">Cars & Coffee: free; Concours: $20–100 admission; dealership events: free</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Search For</span>
+          <span class="detail-value">"Cars and Coffee [city]," "Porsche club [region]," "Concours d'Elegance [area]"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Boat Shows & Marinas</h3>
+      <div class="venue-why">Waterfront lifestyle, boat-owner community, weekend culture</div>
+      <p>Boat shows are open to the public and attract buyers, dreamers, and the boating community. Local marinas, especially those with restaurants or bars, are social gathering points for boat owners. Sailing regattas often welcome spectators and volunteers.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">Boat shows: $15–30 admission; marina restaurants: normal dining prices</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Horse Racing, Polo & Equestrian Events</h3>
+      <div class="venue-why">Old money meets new money, social spectacle, dress-up culture</div>
+      <p>Horse racing events (Kentucky Derby, Preakness, Belmont, Del Mar, Saratoga, or your local track's big race days) draw an affluent crowd that dresses up and socializes. Polo matches are more intimate and attract a very wealthy audience — many are free or low-cost to attend and include tailgating.</p>
+      <p>Local tracks have regular race days that are affordable and social. The clubhouse or premium seating areas concentrate the higher-spending crowd.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">General admission: $5–30; clubhouse: $50–200; major events: $100–500+</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Search For</span>
+          <span class="detail-value">"Horse racing [your state]," "polo match [region]," "equestrian events near me"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Luxury Real Estate Open Houses</h3>
+      <div class="venue-why">Buyers, investors, and networkers browse high-end properties</div>
+      <p>Open houses for luxury properties ($1M+) are free to attend and attract serious buyers, real estate investors, and people in affluent circles. Many luxury brokerages host "broker's opens" and cocktail-style open houses designed for networking. It's also a great way to learn about affluent neighborhoods in your area.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">How to Find</span>
+          <span class="detail-value">Zillow/Realtor.com — filter by price $1M+, "Open House"; follow luxury agents on Instagram</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">Free — just show up well-dressed and sign in</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 7: Travel -->
+  <div class="section" id="travel">
+    <div class="section-header">
+      <span class="section-number">7</span>
+      <h2>Hotels, Resorts & Travel Spots</h2>
+    </div>
+    <p class="section-intro">Luxury hospitality venues don't require a room key — their public-facing bars, restaurants, and pools attract affluent locals and travelers.</p>
+
+    <div class="venue">
+      <h3>Luxury Hotel Bars & Lobbies</h3>
+      <div class="venue-why">Business travelers, local high-earners, sophisticated atmosphere</div>
+      <p>The bar at a Four Seasons, Ritz-Carlton, St. Regis, W, or Waldorf Astoria is open to anyone. These attract business travelers (often on expense accounts), local professionals for meetings, and couples on date nights. The lobby lounge during afternoon/evening is also a natural place to sit with a book or laptop and strike up conversation.</p>
+      <p>Many luxury hotels host themed evenings — live jazz, DJ nights, wine tastings — that draw local crowds beyond hotel guests.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Best Times</span>
+          <span class="detail-value">Weekday evenings for business travelers; weekends for locals</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Budget</span>
+          <span class="detail-value">$15–25 per cocktail; 2-drink evening: $40–60</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Ski Resorts & Mountain Lodges</h3>
+      <div class="venue-why">Seasonal getaways, après-ski culture, resort community</div>
+      <p>Ski resorts like Aspen, Vail, Park City, Jackson Hole, Telluride, and Whistler are seasonal concentrations of wealth. The après-ski scene (lodge bars, restaurants) is highly social. Even if you don't ski, many resorts have spas, restaurants, and social events accessible to day visitors or short-stay guests.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">When</span>
+          <span class="detail-value">December–March for ski season; summer for hiking/biking season at the same resorts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h3>Beach Clubs & Resort Pools</h3>
+      <div class="venue-why">Vacation mode socializing, day-pass access, resort lifestyle</div>
+      <p>Many luxury resorts sell day passes to their pools and beach clubs ($50–200). In cities like Miami, LA, Las Vegas, and coastal areas, standalone beach clubs and pool clubs are popular social venues. The relaxed atmosphere makes conversation easy and natural.</p>
+      <div class="detail-grid">
+        <div class="detail">
+          <span class="detail-label">Cost</span>
+          <span class="detail-value">Day passes: $50–200; includes pool/beach access, sometimes food credit</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Search For</span>
+          <span class="detail-value">"Pool day pass [city]," "beach club [area]," "resort day pass near me"</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 8: Digital -->
+  <div class="section" id="digital">
+    <div class="section-header">
+      <span class="section-number">8</span>
+      <h2>Digital Tools & Apps</h2>
+    </div>
+    <p class="section-intro">Technology can help you discover events and venues you wouldn't find otherwise — and some platforms curate for affluence directly.</p>
+
+    <div class="venue">
+      <h3>Event Discovery</h3>
+      <div class="venue-why">Finding curated events and upscale gatherings</div>
+      <ul class="tip-list">
+        <li><strong>Eventbrite</strong> — Search for galas, wine tastings, networking mixers; filter by "paid" and sort by price for higher-end events</li>
+        <li><strong>Meetup.com</strong> — Look for groups like "Millionaire Mindset," luxury car clubs, entrepreneur groups, investor meetups, yacht and sailing groups</li>
+        <li><strong>Facebook Events</strong> — Follow luxury venues, country clubs, and nonprofits in your area for event announcements</li>
+        <li><strong>Instagram</strong> — Follow local lifestyle accounts, luxury venues, and event planners — they often share invite-only events via Stories</li>
+        <li><strong>Local society/lifestyle magazines</strong> — Every mid-to-large city has one (e.g., Atlanta Magazine, Boston Common, Austin Monthly). They list charity events, gallery openings, and social happenings</li>
+      </ul>
+    </div>
+
+    <div class="venue">
+      <h3>Dating & Social Apps</h3>
+      <div class="venue-why">Curated matching based on income, career, education</div>
+      <ul class="tip-list">
+        <li><strong>Raya</strong> — Application-based, curated for creative professionals and public figures. Instagram following matters for acceptance</li>
+        <li><strong>The League</strong> — Connects ambitious professionals; links to LinkedIn for verification. Waitlist in major cities</li>
+        <li><strong>Hinge</strong> — Use the "Standouts" feature and set education/career filters to find professionals</li>
+        <li><strong>Luxy</strong> — Specifically markets to high-income users; income verification available</li>
+        <li><strong>Bumble Premium</strong> — Advanced filters for education level and career; good in affluent metro areas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 9: Principles -->
+  <div class="section" id="principles">
+    <div class="section-header">
+      <span class="section-number">9</span>
+      <h2>Principles for Genuine Connection</h2>
+    </div>
+    <p class="section-intro">The venue gets you in the room. These principles make the difference between a forgettable encounter and a real connection.</p>
+
+    <div class="principle">
+      <h4>Lead with genuine curiosity, not agenda</h4>
+      <p>Ask about their work, their passions, what they're enjoying. People sense when someone is interested in them versus interested in their wallet. The most magnetic quality in any room is someone who is genuinely engaged and interesting to talk to. Ask follow-up questions. Remember details.</p>
+    </div>
+
+    <div class="principle">
+      <h4>Invest in yourself visibly</h4>
+      <p>You don't need to spend a fortune on clothes, but fit matters enormously. One well-tailored outfit makes a stronger impression than a closet of labels. Good grooming, a quality watch or accessory, clean shoes — these signal that you take care of yourself. Confidence reads louder than any brand name.</p>
+    </div>
+
+    <div class="principle">
+      <h4>Have your own thing going on</h4>
+      <p>Successful people are attracted to other people with purpose and passion. Whether it's your career, a creative project, a fitness goal, or a cause you care about — having your own story makes you interesting and gives you substance to share in conversation.</p>
+    </div>
+
+    <div class="principle">
+      <h4>Become a regular, not a tourist</h4>
+      <p>Pick 2–3 venues or activities and commit to them consistently. Showing up at the same cigar lounge every Thursday, the same gym class every morning, or the same charity's events over a year builds familiarity and trust. The deepest connections come from repeated, low-pressure exposure over time.</p>
+    </div>
+
+    <div class="principle">
+      <h4>Be a connector</h4>
+      <p>When you meet interesting people, introduce them to each other. Nothing builds social capital faster than being someone who adds value to other people's networks. "You should meet my friend who does X — I think you'd have a lot in common" is a power move that costs nothing.</p>
+    </div>
+
+    <div class="principle">
+      <h4>Match the energy of the space</h4>
+      <p>Every venue has a rhythm. A cigar lounge is slow and conversational. A charity gala is energetic and brief-encounter driven. A gym is focused during the workout, social before and after. Read the room, match the pace, and don't overstay a conversation. Leaving someone wanting more is always better than lingering too long.</p>
+    </div>
+
+    <div class="principle">
+      <h4>Follow up thoughtfully</h4>
+      <p>After meeting someone, a simple text or Instagram follow-up within 24–48 hours keeps the connection alive. Reference something specific you talked about. Suggest a concrete next step: "I'm going to that wine tasting next Thursday — you should come." Low-pressure, specific invitations work far better than vague "we should hang out" messages.</p>
+    </div>
+  </div>
+
+  <div class="guide-footer">
+    <p>"The goal isn't to find rich people — it's to put yourself in rooms where interesting, ambitious, successful people naturally gather, and to be someone worth knowing when you get there."</p>
+    <p class="note">Curated September 2026 · Organized for your PersonalBase</p>
+  </div>
+</div>
