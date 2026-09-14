@@ -1,0 +1,883 @@
+<title>Orlando Affluent Events Guide</title>
+<meta name="description" content="No-membership-required events and activities around Orlando where affluent men spend time — art, tastings, car culture, charity galas, and more.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ground: #F9F6F1;
+    --surface: #FFFFFF;
+    --surface-alt: #F3EFE8;
+    --border: #E8E2D8;
+    --text: #2C2F36;
+    --text-muted: #7D7A75;
+    --text-light: #A09B94;
+    --gold: #B8955A;
+    --gold-light: #D4BC8A;
+    --gold-faint: rgba(184, 149, 90, 0.08);
+    --teal: #3D7B6F;
+    --teal-faint: rgba(61, 123, 111, 0.07);
+    --navy: #1C2331;
+    --shadow: rgba(44, 47, 54, 0.06);
+    --shadow-md: rgba(44, 47, 54, 0.1);
+    --serif: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+    --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #141820;
+      --surface: #1C2131;
+      --surface-alt: #232839;
+      --border: #2E3447;
+      --text: #E4E2DE;
+      --text-muted: #9B978F;
+      --text-light: #6B675F;
+      --gold: #C9A96E;
+      --gold-light: #A48A56;
+      --gold-faint: rgba(201, 169, 110, 0.1);
+      --teal: #5AADA0;
+      --teal-faint: rgba(90, 173, 160, 0.1);
+      --navy: #0D1018;
+      --shadow: rgba(0, 0, 0, 0.2);
+      --shadow-md: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #141820;
+    --surface: #1C2131;
+    --surface-alt: #232839;
+    --border: #2E3447;
+    --text: #E4E2DE;
+    --text-muted: #9B978F;
+    --text-light: #6B675F;
+    --gold: #C9A96E;
+    --gold-light: #A48A56;
+    --gold-faint: rgba(201, 169, 110, 0.1);
+    --teal: #5AADA0;
+    --teal-faint: rgba(90, 173, 160, 0.1);
+    --navy: #0D1018;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --shadow-md: rgba(0, 0, 0, 0.3);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 400;
+    line-height: 1.7;
+    padding-inline: 20px;
+    padding-block: 0 60px;
+  }
+
+  /* Hero */
+  .hero {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-block: 48px 28px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: 16px;
+  }
+
+  .hero-sub {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: var(--teal-faint);
+    border: 1px solid var(--teal);
+    border-radius: 100px;
+    padding: 5px 14px;
+  }
+
+  .main { max-width: 720px; margin: 0 auto; }
+
+  /* Filter note */
+  .filter-note {
+    background: var(--gold-faint);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 32px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .filter-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .filter-note p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .filter-note strong { color: var(--text); }
+
+  /* TOC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  .toc-title {
+    font-family: var(--sans);
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 14px;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 5px 24px;
+  }
+
+  .toc-list a {
+    font-size: 0.9rem;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 4px 0;
+    transition: color 0.15s;
+  }
+
+  .toc-list a:hover { color: var(--gold); }
+
+  .toc-num {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gold);
+    min-width: 18px;
+  }
+
+  /* Sections */
+  .section {
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  .section:first-of-type { border-top: none; padding-top: 0; }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+
+  .section-number {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .section h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 500;
+    color: var(--text);
+    text-wrap: balance;
+    line-height: 1.25;
+  }
+
+  .section-intro {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    max-width: 600px;
+  }
+
+  /* Event cards */
+  .event {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 22px 26px;
+    margin-bottom: 14px;
+  }
+
+  .event h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 3px;
+  }
+
+  .event-activity {
+    font-size: 0.82rem;
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--teal);
+    margin-bottom: 10px;
+  }
+
+  .event p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+
+  .event p:last-child { margin-bottom: 0; }
+
+  /* Detail pills */
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+
+  .pill {
+    font-size: 0.73rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--surface-alt);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  .pill--cost {
+    background: var(--gold-faint);
+    color: var(--gold);
+    border-color: var(--gold-light);
+  }
+
+  .pill--when {
+    background: var(--teal-faint);
+    color: var(--teal);
+    border-color: var(--teal);
+  }
+
+  /* Venue name highlights */
+  .venue-name {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .neighborhood {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+
+  /* Callout */
+  .callout {
+    background: var(--gold-faint);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+
+  .callout-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 5px;
+  }
+
+  .callout p {
+    font-size: 0.86rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+  }
+
+  /* Tip list */
+  .tip-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tip-list li {
+    font-size: 0.88rem;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.65;
+  }
+
+  .tip-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  /* Footer */
+  .guide-footer {
+    margin-top: 52px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .guide-footer p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .guide-footer .note {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    color: var(--text-light);
+    margin-top: 14px;
+    font-style: normal;
+  }
+
+  @media (max-width: 480px) {
+    .event { padding: 18px; }
+    .toc { padding: 18px; }
+    .toc-list { grid-template-columns: 1fr; }
+    .filter-note { flex-direction: column; gap: 8px; }
+  }
+</style>
+
+<div class="hero">
+  <div class="hero-eyebrow">Orlando & Central Florida</div>
+  <h1>Events & Activities Where Affluent Men Spend Time</h1>
+  <p class="hero-sub">No memberships needed — just show up, do something interesting, and meet people worth knowing.</p>
+  <div class="hero-badge">✓ Activity-focused · No membership required</div>
+</div>
+
+<div class="main">
+
+  <div class="filter-note">
+    <span class="filter-icon">🎯</span>
+    <p><strong>Every event here gives you something to do</strong> — browse art, taste wine, watch cars, bid at an auction, volunteer. Shared activities create natural conversation. You're not just "going out" — you're participating in something, which is the best way to connect authentically.</p>
+  </div>
+
+  <nav class="toc">
+    <div class="toc-title">What's in here</div>
+    <ol class="toc-list">
+      <li><a href="#art"><span class="toc-num">1</span> Art Walks, Galleries & Museum Nights</a></li>
+      <li><a href="#tastings"><span class="toc-num">2</span> Wine, Whiskey & Food Experiences</a></li>
+      <li><a href="#cars"><span class="toc-num">3</span> Car Culture & Shows</a></li>
+      <li><a href="#charity"><span class="toc-num">4</span> Charity Galas & Benefit Events</a></li>
+      <li><a href="#performing"><span class="toc-num">5</span> Performing Arts & Cultural Events</a></li>
+      <li><a href="#outdoor"><span class="toc-num">6</span> Polo, Equestrian & Outdoor Events</a></li>
+      <li><a href="#realestate"><span class="toc-num">7</span> Luxury Open Houses & Boat Shows</a></li>
+      <li><a href="#recurring"><span class="toc-num">8</span> Recurring Weekly & Monthly Spots</a></li>
+      <li><a href="#find"><span class="toc-num">9</span> How to Find These Events</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1: Art -->
+  <div class="section" id="art">
+    <div class="section-header">
+      <span class="section-number">1</span>
+      <h2>Art Walks, Galleries & Museum Nights</h2>
+    </div>
+    <p class="section-intro">Free or cheap, always something to look at and talk about, and Orlando's art scene draws a surprisingly affluent crowd — especially in Winter Park and Ivanhoe Village.</p>
+
+    <div class="event">
+      <h3>3rd Thursday Gallery Hop — Ivanhoe Village</h3>
+      <div class="event-activity">Walk between galleries, meet artists, sip wine, browse new exhibitions</div>
+      <p>Orlando's original art walk. Galleries along <span class="venue-name">N. Orange Avenue</span> between Princeton and Virginia open their doors with new shows, wine, and live music. The crowd skews creative professionals, entrepreneurs, and art collectors. Walk at your own pace and naturally strike up conversation about pieces that catch your eye.</p>
+      <p>Key stops: <span class="venue-name">Gallery at Avalon Island</span>, <span class="venue-name">CityArts</span>, and rotating pop-up spaces. The restaurants and bars along the strip fill up after — great for continuing a conversation.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free</span>
+        <span class="pill pill--when">3rd Thursday of each month · 6–9 PM</span>
+        <span class="pill">Ivanhoe Village / Mills 50</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Winter Park Art Festivals</h3>
+      <div class="event-activity">Browse fine art, meet artists, enjoy live music and food in Park Avenue's most social setting</div>
+      <p>The <span class="venue-name">Winter Park Sidewalk Art Festival</span> (March, 3 days) is one of the top-rated juried outdoor art festivals in the country — 225+ artists, 350,000+ visitors, and it's <em>free</em>. The crowd is heavily Winter Park's affluent resident base. It's held along Park Avenue and Central Park, so the surrounding restaurants and cafés become overflow social hubs.</p>
+      <p>The <span class="venue-name">Autumn Art Festival</span> (October) is smaller and more intimate — easier to have longer conversations. Both attract serious collectors alongside casual browsers.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free admission</span>
+        <span class="pill pill--when">March (Sidewalk) · October (Autumn)</span>
+        <span class="pill">Park Avenue, Winter Park</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Orlando Museum of Art — 1st Thursdays</h3>
+      <div class="event-activity">Local artists, live music, food trucks, cocktails in a museum setting</div>
+      <p><span class="venue-name">OMA's 1st Thursday</span> events transform the museum into a social scene. Local and regional artists exhibit and sell work, there's live music, a cash bar, and food. It draws a mix of young professionals, established collectors, and the arts-philanthropy crowd. Walk around, ask artists about their process — it's the kind of environment where conversations happen effortlessly.</p>
+      <div class="details">
+        <span class="pill pill--cost">$15 general / $10 members</span>
+        <span class="pill pill--when">1st Thursday · 6–9 PM</span>
+        <span class="pill">Loch Haven Park</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Charles Hosmer Morse Museum of American Art</h3>
+      <div class="event-activity">World's largest Tiffany glass collection, Friday evening events with live music</div>
+      <p>This Winter Park gem houses the world's most comprehensive collection of Louis Comfort Tiffany works. The <span class="venue-name">Friday Nights at the Morse</span> series (November–April) features free admission and live music in the museum garden. The crowd reflects Winter Park's demographics — educated, well-off, and genuinely interested in art and culture.</p>
+      <div class="details">
+        <span class="pill pill--cost">$6 general / Free on Friday nights (Nov–Apr)</span>
+        <span class="pill pill--when">Fri 4–8 PM (seasonal free nights)</span>
+        <span class="pill">Winter Park</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Gallery Openings at Rollins Museum of Art</h3>
+      <div class="event-activity">Exhibition openings, artist talks, receptions with wine in a college museum setting</div>
+      <p>Rollins College's <span class="venue-name">Cornell Fine Arts Museum</span> hosts exhibition openings with receptions — free, open to the public, and attended by Winter Park's patron community, Rollins alumni (a well-connected network), and local art lovers. Check their calendar for opening receptions, which usually include wine and conversation with curators.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free</span>
+        <span class="pill pill--when">Exhibition openings throughout the year</span>
+        <span class="pill">Rollins College, Winter Park</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Art conversation tip</div>
+      <p>You don't need to be an expert. "What do you think of this one?" or "I'm drawn to this but I can't put my finger on why" works perfectly. Genuine curiosity beats pretending to know about art history. If you find a piece you actually like, say so — enthusiasm is magnetic.</p>
+    </div>
+  </div>
+
+  <!-- 2: Tastings -->
+  <div class="section" id="tastings">
+    <div class="section-header">
+      <span class="section-number">2</span>
+      <h2>Wine, Whiskey & Culinary Events</h2>
+    </div>
+    <p class="section-intro">Tasting events are perfect — you're literally doing something together, and the shared experience of trying something new is an instant bonding moment.</p>
+
+    <div class="event">
+      <h3>Wine Tastings at The Wine Room</h3>
+      <div class="event-activity">Self-serve wine tasting with 156 wines on tap — pour, taste, and compare at your own pace</div>
+      <p><span class="venue-name">The Wine Room on Park Avenue</span> in Winter Park is a standout. It uses a card-based self-serve system with 156 wines available by the taste, half-glass, or full glass. The format naturally encourages conversation — you're standing, moving between wine stations, and comparing notes. It attracts an affluent Winter Park crowd, especially on evenings and weekends.</p>
+      <p>They also host structured tasting events with sommeliers, wine dinners, and pairing classes.</p>
+      <div class="details">
+        <span class="pill pill--cost">$20–80 depending on how many wines you taste</span>
+        <span class="pill pill--when">Daily · Best Thurs–Sat evenings</span>
+        <span class="pill">Park Avenue, Winter Park</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Flutes — Champagne & Bubbly Bar</h3>
+      <div class="event-activity">Champagne flights, live music, and a celebratory atmosphere</div>
+      <p><span class="venue-name">Flutes</span> in Winter Park is a dedicated champagne and sparkling wine bar — one of the few in the area. The vibe is celebratory and social. They host tasting events, champagne education nights, and live music. The clientele reflects Winter Park's affluent demographics.</p>
+      <div class="details">
+        <span class="pill pill--cost">$15–50 for flights and glasses</span>
+        <span class="pill pill--when">Wed–Sun evenings</span>
+        <span class="pill">Winter Park</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Corona Cigar Company — Tastings & Events</h3>
+      <div class="event-activity">Cigar and whiskey pairings, brand events, slow-paced socializing</div>
+      <p><span class="venue-name">Corona Cigar Company</span> downtown is the anchor of Orlando's cigar scene — a massive space with a walk-in humidor, full bar, and regular pairing events. They host brand nights (cigar manufacturers bring new releases), whiskey tastings, and special events. The pace is deliberately slow — people sit, sip, smoke, and talk for hours. The crowd is predominantly male, professional, and affluent.</p>
+      <p>Even without a special event, sitting at the bar on a Thursday or Friday evening puts you in conversation range with regulars.</p>
+      <div class="details">
+        <span class="pill pill--cost">$15–40 (cigar + drink)</span>
+        <span class="pill pill--when">Brand events monthly · Bar open daily</span>
+        <span class="pill">Downtown Orlando (Church St)</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Food & Wine Festival at EPCOT</h3>
+      <div class="event-activity">Walk between global food & wine booths, attend seminars, meet chefs</div>
+      <p>The annual <span class="venue-name">EPCOT International Food & Wine Festival</span> (July–November) draws foodies and oenophiles — including many affluent locals who hold annual passes specifically for this event. The premium experiences — reserve wine seminars, chef demos, specialty dining events — attract a higher-spending crowd. It's inherently social: you're walking, tasting, and comparing experiences.</p>
+      <p>Book the ticketed <span class="venue-name">Party for the Senses</span> events or wine seminars for the most concentrated affluent crowd.</p>
+      <div class="details">
+        <span class="pill pill--cost">Park admission + $5–15 per tasting; seminars $25–199</span>
+        <span class="pill pill--when">July–November (annual)</span>
+        <span class="pill">EPCOT</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Cooking Classes & Chef's Table Experiences</h3>
+      <div class="event-activity">Hands-on cooking alongside other food-curious professionals</div>
+      <p><span class="venue-name">Publix Aprons Cooking School</span> (Dr. Phillips) offers well-run, affordable classes in a social group setting. <span class="venue-name">Truffles & Trifles</span> and local private chef experiences offer more upscale, intimate group dinners and classes. These tend to attract couples and professionals who enjoy food as a hobby — a crowd with disposable income and intellectual curiosity.</p>
+      <div class="details">
+        <span class="pill pill--cost">$40–150 per class</span>
+        <span class="pill pill--when">Various schedules · Evenings & weekends</span>
+        <span class="pill">Dr. Phillips area & various</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3: Cars -->
+  <div class="section" id="cars">
+    <div class="section-header">
+      <span class="section-number">3</span>
+      <h2>Car Culture & Shows</h2>
+    </div>
+    <p class="section-intro">Car enthusiasts love talking about their cars — and the ones who drive Porsches, Ferraris, and classic collectibles tend to be doing well financially. Orlando has an active car scene.</p>
+
+    <div class="event">
+      <h3>Cars & Coffee Orlando</h3>
+      <div class="event-activity">Browse exotic, classic, and sports cars; talk to owners who are proud to share</div>
+      <p>Multiple <span class="venue-name">Cars & Coffee</span> meets happen around Orlando — including one often held in <span class="venue-name">Winter Park</span> and the <span class="venue-name">Lake Nona</span> area. Owners bring their Porsches, Ferraris, McLarens, classic muscle cars, and project builds. The etiquette is simple: admire, ask questions, be genuine. Owners come specifically to show off and talk shop — they <em>want</em> you to ask about their car.</p>
+      <p>Check Instagram and Facebook for "Cars and Coffee Orlando," "Cars and Coffee Winter Park," and "Cars and Coffee Lake Nona" for current schedules.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free</span>
+        <span class="pill pill--when">Saturday mornings · 8–11 AM (typically)</span>
+        <span class="pill">Winter Park, Lake Nona, various</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Exotic Dealership Events</h3>
+      <div class="event-activity">New model launches, open houses, track days organized by luxury dealers</div>
+      <p><span class="venue-name">Ferrari of Central Florida</span> and <span class="venue-name">Fields Motorcars</span> (Lamborghini, Rolls-Royce, Bentley, Maserati) in Lake Mary and Daytona regularly host client appreciation events, new model reveals, and open houses that are open to serious enthusiasts and prospects. Follow them on social media for invitations — you don't need to be a current customer to attend most events.</p>
+      <p>These events often include food, drinks, and the chance to sit in (and sometimes drive) new models.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free (by invitation / RSVP)</span>
+        <span class="pill pill--when">Quarterly events · Follow social media</span>
+        <span class="pill">Lake Mary, Daytona, Orlando area</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Festivals of Speed & Concours Events</h3>
+      <div class="event-activity">Curated displays of rare and collectible cars, judged competitions, luxury vendor displays</div>
+      <p><span class="venue-name">Festivals of Speed</span> events at venues like the Ritz-Carlton Orlando bring together rare exotics, vintage classics, luxury watches, and private aviation — all in one upscale, curated setting. <span class="venue-name">Amelia Island Concours d'Elegance</span> (about 2 hours north) is one of the premier car collector events in the country and draws serious wealth from across the Southeast.</p>
+      <div class="details">
+        <span class="pill pill--cost">$25–150 depending on event</span>
+        <span class="pill pill--when">Annual events · Check schedules</span>
+        <span class="pill">Ritz-Carlton, Amelia Island (2 hrs north)</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">The car conversation cheat code</div>
+      <p>"That's beautiful — what year is it?" or "How do you like the [model name]?" is all you need. Car people are passionate and generous with their knowledge. Ask about their driving experiences, not the price. If you know nothing about cars, say so honestly — "I don't know much about these, but I'd love to learn" is disarming and flattering.</p>
+    </div>
+  </div>
+
+  <!-- 4: Charity -->
+  <div class="section" id="charity">
+    <div class="section-header">
+      <span class="section-number">4</span>
+      <h2>Charity Galas & Benefit Events</h2>
+    </div>
+    <p class="section-intro">Galas are structured for mingling — cocktail hours, seated dinners, live auctions. Everyone is there to be social, and the shared cause gives you purpose beyond just showing up.</p>
+
+    <div class="event">
+      <h3>Major Orlando Charity Galas</h3>
+      <div class="event-activity">Cocktail reception, seated dinner, live auction, dancing — a full social evening</div>
+      <p>Orlando's top charity galas draw the city's wealthiest donors and most connected social circles. Key annual events include:</p>
+      <ul class="tip-list">
+        <li><span class="venue-name">St. Jude Gala</span> at the Four Seasons Orlando — one of the biggest, black-tie, attracts major donors</li>
+        <li><span class="venue-name">Wishmaker's Ball</span> (Make-A-Wish) at the Waldorf Astoria — emotional, well-attended by Orlando's business elite</li>
+        <li><span class="venue-name">UNCF Mayor's Masked Ball</span> — elegant masked event, strong community leadership attendance</li>
+        <li><span class="venue-name">Give Kids The World Gala</span> — beloved Central Florida charity, attracts hospitality and tourism industry leaders</li>
+        <li><span class="venue-name">Heart Ball</span> (American Heart Association) — classic gala format, medical and business professionals</li>
+        <li><span class="venue-name">Orlando Philharmonic Galas</span> — arts patronage crowd, elegant and intimate</li>
+      </ul>
+      <div class="details">
+        <span class="pill pill--cost">$150–500+ per ticket</span>
+        <span class="pill pill--when">Scattered throughout the year · Most Sept–May</span>
+        <span class="pill">Four Seasons, Waldorf, Ritz-Carlton venues</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Nonprofit Benefit Nights & Casual Fundraisers</h3>
+      <div class="event-activity">Smaller-scale events — wine pulls, trivia nights, auction previews</div>
+      <p>Not every fundraiser is a $500 gala. Many Orlando nonprofits host casual benefit nights at local restaurants and breweries, wine-pull events, trivia fundraisers, and auction preview nights. These are lower-cost, more relaxed, and often attract younger professionals and mid-career donors. Check organizations like <span class="venue-name">Junior League of Greater Orlando</span>, <span class="venue-name">Orlando Young Professionals</span>, and local hospital foundations.</p>
+      <div class="details">
+        <span class="pill pill--cost">$25–100</span>
+        <span class="pill pill--when">Year-round · Check nonprofit calendars</span>
+        <span class="pill">Various Orlando venues</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Volunteer at Major Events</h3>
+      <div class="event-activity">Work behind the scenes and meet organizers, donors, and community leaders — for free</div>
+      <p>Volunteering for charity events is a high-value, zero-cost strategy. You interact with event chairs (often well-connected community leaders), meet donors in a context where you're being helpful rather than transactional, and you demonstrate character. Many volunteers are invited to the post-event reception or future events as guests.</p>
+      <p>Start with one organization. Join a <span class="venue-name">Young Professionals Advisory Board</span> — these groups exist at most major Orlando nonprofits and are specifically designed for emerging professionals to connect with established donors and board members.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free</span>
+        <span class="pill pill--when">Sign up through nonprofit websites</span>
+        <span class="pill">VolunteerMatch.org, HandsOn Orlando</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5: Performing Arts -->
+  <div class="section" id="performing">
+    <div class="section-header">
+      <span class="section-number">5</span>
+      <h2>Performing Arts & Cultural Events</h2>
+    </div>
+    <p class="section-intro">Intermission at the symphony, the lobby before a show, the restaurant after — performances create shared experiences and natural conversation windows.</p>
+
+    <div class="event">
+      <h3>Dr. Phillips Center for the Performing Arts</h3>
+      <div class="event-activity">Broadway shows, concerts, comedy, dance — Orlando's premier performing arts venue</div>
+      <p><span class="venue-name">Dr. Phillips Center</span> downtown is the cultural anchor of Orlando. Broadway touring shows, the Orlando Philharmonic, Orlando Ballet, concerts, and comedy — the programming draws an audience that appreciates culture and has the means to attend regularly. The lobby, Judson's Bar & Grille, and the surrounding restaurants (especially <span class="venue-name">The Boheme</span> at the Grand Bohemian hotel across the street) are where pre- and post-show socializing happens.</p>
+      <p>Join their <span class="venue-name">Young Professionals</span> program for discounted tickets and exclusive social events tied to performances.</p>
+      <div class="details">
+        <span class="pill pill--cost">$40–200+ depending on show</span>
+        <span class="pill pill--when">Year-round programming</span>
+        <span class="pill">Downtown Orlando</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Orlando Philharmonic Orchestra</h3>
+      <div class="event-activity">Classical performances plus casual "Pops" series and outdoor concerts</div>
+      <p>The <span class="venue-name">Orlando Philharmonic</span> performs at Dr. Phillips Center and other venues. Their Pops series is more accessible and social than formal classical concerts. They also host outdoor concerts and community events that are more relaxed. Patron-level memberships include exclusive receptions and post-concert meet-and-greets with musicians and fellow patrons.</p>
+      <div class="details">
+        <span class="pill pill--cost">$25–100 for single tickets</span>
+        <span class="pill pill--when">Season runs Oct–May</span>
+        <span class="pill">Dr. Phillips Center & various</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Enzian Theater — Eden Bar & Film Events</h3>
+      <div class="event-activity">Independent films, special screenings, and the Florida Film Festival</div>
+      <p><span class="venue-name">Enzian Theater</span> in Maitland is Central Florida's only full-time independent cinema — a unique venue with table service during films, a strong food and drink menu, and <span class="venue-name">Eden Bar</span>, a beautiful outdoor bar perfect for before/after socializing. The <span class="venue-name">Florida Film Festival</span> (April) brings filmmakers, industry professionals, and the cultural crowd together for 10+ days of screenings, parties, and events.</p>
+      <div class="details">
+        <span class="pill pill--cost">$12–15 for films; Festival passes $100–400</span>
+        <span class="pill pill--when">Daily screenings · Film Festival in April</span>
+        <span class="pill">Maitland (near Winter Park)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6: Outdoor -->
+  <div class="section" id="outdoor">
+    <div class="section-header">
+      <span class="section-number">6</span>
+      <h2>Polo, Equestrian & Outdoor Spectating</h2>
+    </div>
+    <p class="section-intro">Spectator events with a dress-up culture — you're watching something exciting while surrounded by people who have the means to be there.</p>
+
+    <div class="event">
+      <h3>World Equestrian Center — Ocala</h3>
+      <div class="event-activity">Watch world-class equestrian competition, explore luxury vendors, dine on-site</div>
+      <p>The <span class="venue-name">World Equestrian Center</span> in Ocala (about 75 minutes from Orlando) is a $400M+ facility hosting year-round competitions including the massive <span class="venue-name">$1M Championship Show</span> in September. The complex includes multiple restaurants, luxury vendor markets, and a resort hotel. Spectating is free or low-cost, and the crowd includes horse owners (serious wealth), equestrian families, and luxury lifestyle enthusiasts.</p>
+      <p>The equestrian world is tight-knit and social — even as a spectator, the vendor village and dining areas create natural mixing opportunities.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free–$20 spectator admission</span>
+        <span class="pill pill--when">Year-round · Major shows monthly</span>
+        <span class="pill">Ocala (75 min from Orlando)</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Polo Events</h3>
+      <div class="event-activity">Watch polo matches, tailgate with the crowd, divot stomp at halftime</div>
+      <p>Central Florida has polo clubs within driving distance. Matches typically allow spectator access for modest admission, and the tradition of halftime "divot stomping" (walking the field to push divots back in) is a famously social moment. Bring a picnic setup, dress smart casual, and you'll fit right in. Check for <span class="venue-name">International Polo Club Palm Beach</span> (about 2.5 hours south) for the premier Florida polo experience during season (January–April).</p>
+      <div class="details">
+        <span class="pill pill--cost">$10–30 general admission</span>
+        <span class="pill pill--when">January–April (season)</span>
+        <span class="pill">Central & South Florida</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Golf Tournaments as a Spectator</h3>
+      <div class="event-activity">Walk the course, watch pros play, enjoy hospitality tents and vendor areas</div>
+      <p>The <span class="venue-name">Arnold Palmer Invitational</span> at Bay Hill (March) is Orlando's PGA Tour event and a major social gathering. Spectator tickets give you access to the course, hospitality areas, and the general crowd — which includes corporate clients, local business owners, and golf enthusiasts. The atmosphere is part sporting event, part social scene, especially around the clubhouse and hospitality tents.</p>
+      <div class="details">
+        <span class="pill pill--cost">$60–200 for daily grounds passes</span>
+        <span class="pill pill--when">March (Arnold Palmer Invitational)</span>
+        <span class="pill">Bay Hill Club & Lodge</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7: Real Estate & Boats -->
+  <div class="section" id="realestate">
+    <div class="section-header">
+      <span class="section-number">7</span>
+      <h2>Luxury Open Houses & Boat Shows</h2>
+    </div>
+    <p class="section-intro">Walk through stunning homes or browse yachts — completely free, no commitment, and the people around you are either wealthy buyers or aspirational explorers like you.</p>
+
+    <div class="event">
+      <h3>Luxury Real Estate Open Houses</h3>
+      <div class="event-activity">Tour million-dollar homes, meet agents and potential buyers, explore affluent neighborhoods</div>
+      <p>Orlando's luxury real estate market is active, and open houses happen every weekend. Key neighborhoods to watch:</p>
+      <ul class="tip-list">
+        <li><span class="venue-name">Golden Oak at Walt Disney World</span> — ultra-luxury community (~300 homes, $3M+). Open houses are rare but spectacular — took 8 of the top 10 Central FL sales in 2025</li>
+        <li><span class="venue-name">Windermere / Isleworth area</span> — lakefront estates, traditional wealth address. Active open house scene on weekends</li>
+        <li><span class="venue-name">Lake Nona estates</span> — newer wealth, tech/medical professionals, modern luxury homes</li>
+        <li><span class="venue-name">Winter Park</span> — established old-money homes, charming neighborhoods, walkable to Park Avenue</li>
+        <li><span class="venue-name">Dr. Phillips</span> — close to Restaurant Row, family-oriented luxury</li>
+      </ul>
+      <p>Search Zillow or Realtor.com for open houses priced $1M+ in these zip codes. Follow luxury agents on Instagram — they post open house events with catered food and drinks.</p>
+      <div class="details">
+        <span class="pill pill--cost">Free</span>
+        <span class="pill pill--when">Weekends · Saturday & Sunday 1–4 PM typical</span>
+        <span class="pill">Windermere, Lake Nona, Winter Park, Golden Oak</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Orlando Boat Show</h3>
+      <div class="event-activity">Browse boats from fishing to yachts, talk to dealers and owners, test marine tech</div>
+      <p>The <span class="venue-name">Orlando Boat Show</span> at the Orange County Convention Center runs twice a year and features everything from fishing boats to luxury yachts. Boat shows attract a predominantly male, affluent crowd that's enthusiastic and talkative — similar energy to car culture. It's hands-on: you can climb aboard, sit in the captain's chair, and talk specs with dealers and other attendees.</p>
+      <div class="details">
+        <span class="pill pill--cost">$15–20 admission</span>
+        <span class="pill pill--when">Twice yearly (check schedule)</span>
+        <span class="pill">Orange County Convention Center</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8: Recurring -->
+  <div class="section" id="recurring">
+    <div class="section-header">
+      <span class="section-number">8</span>
+      <h2>Recurring Weekly & Monthly Options</h2>
+    </div>
+    <p class="section-intro">One-off events are great for first encounters, but becoming a regular at a recurring activity is where relationships form. These don't require memberships.</p>
+
+    <div class="event">
+      <h3>Park Avenue, Winter Park — Any Evening</h3>
+      <div class="event-activity">Stroll, dine, and people-watch in Orlando's most affluent walkable district</div>
+      <p><span class="venue-name">Park Avenue</span> is the social center of Winter Park's affluent community. Walk the avenue, browse boutiques, grab a seat at <span class="venue-name">Prato</span> (Italian, great bar scene), <span class="venue-name">The Wine Room</span>, or <span class="venue-name">BoVine Steakhouse</span>. The <span class="venue-name">Central Park Farmers' Market</span> on Saturday mornings is packed with local residents. This is where Windermere and Winter Park money comes to be social — it's the area's "town square."</p>
+      <div class="details">
+        <span class="pill pill--cost">$0–80 depending on dining</span>
+        <span class="pill pill--when">Every evening & Saturday mornings (market)</span>
+        <span class="pill">Winter Park</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Luxury Hotel Bar Evenings</h3>
+      <div class="event-activity">Sit at the bar, enjoy a cocktail, and meet business travelers and locals in an elevated setting</div>
+      <p>No reservation, no membership — just walk in and order. Orlando's best hotel bars open to anyone:</p>
+      <ul class="tip-list">
+        <li><span class="venue-name">Capa</span> (rooftop steakhouse/bar at Four Seasons Orlando) — stunning views, Michelin-recognized, serious crowd</li>
+        <li><span class="venue-name">Knife & Spoon</span> (Ritz-Carlton Grande Lakes) — John Tesar's Michelin-starred restaurant, excellent bar</li>
+        <li><span class="venue-name">Bull & Bear</span> (Waldorf Astoria Orlando) — classic steakhouse bar, power-dinner energy</li>
+        <li><span class="venue-name">The Boheme</span> (Grand Bohemian Hotel downtown) — art-filled, live jazz, attracts the downtown cultural crowd</li>
+        <li><span class="venue-name">Lobby Bar at Conrad Orlando</span> — the newest luxury hotel, modern and social</li>
+      </ul>
+      <div class="details">
+        <span class="pill pill--cost">$18–30 per cocktail</span>
+        <span class="pill pill--when">Any evening · Best Wed–Sat</span>
+        <span class="pill">Various Orlando locations</span>
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Restaurant Row Happy Hours</h3>
+      <div class="event-activity">After-work socializing at Orlando's densest cluster of upscale dining</div>
+      <p><span class="venue-name">Restaurant Row</span> along Sand Lake Road in Dr. Phillips is Orlando's highest concentration of upscale restaurants. Happy hours at <span class="venue-name">Ocean Prime</span>, <span class="venue-name">Eddie V's</span>, <span class="venue-name">Fleming's</span>, and <span class="venue-name">Capital Grille</span> draw business professionals, especially mid-week. Sit at the bar — it's the most social seat in the house.</p>
+      <div class="details">
+        <span class="pill pill--cost">$30–60 for happy hour drinks and bites</span>
+        <span class="pill pill--when">Tues–Thurs · 4:30–7 PM</span>
+        <span class="pill">Sand Lake Rd / Dr. Phillips</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9: How to Find -->
+  <div class="section" id="find">
+    <div class="section-header">
+      <span class="section-number">9</span>
+      <h2>How to Stay in the Loop</h2>
+    </div>
+    <p class="section-intro">The hardest part is knowing what's happening and when. Set up these feeds and you'll have a steady stream of events to choose from.</p>
+
+    <div class="event">
+      <h3>Your Event Discovery Toolkit</h3>
+      <div class="event-activity">Set these up once and you'll always have something on the calendar</div>
+      <ul class="tip-list">
+        <li><strong>Instagram</strong> — Follow <span class="venue-name">@orlandomagazine</span>, <span class="venue-name">@winterparkmagazine</span>, <span class="venue-name">@orlandomainstreets</span>, <span class="venue-name">@drphillipscenter</span>, <span class="venue-name">@wineroom</span>, <span class="venue-name">@coronacigar</span>, and luxury dealerships. Events show up in Stories before anywhere else</li>
+        <li><strong>Orlando Magazine & Winter Park Magazine</strong> — Both publish monthly event roundups featuring galas, gallery openings, and social happenings</li>
+        <li><strong>Eventbrite</strong> — Search "Orlando gala," "Winter Park tasting," "Orlando art" — filter by "paid" for higher-end events</li>
+        <li><strong>Orlando Weekly</strong> — The events calendar catches art walks, gallery openings, and cultural events across the metro</li>
+        <li><strong>Facebook Events</strong> — Follow the specific venues listed in this guide; their events auto-populate your feed</li>
+        <li><strong>Dr. Phillips Center newsletter</strong> — Sign up for their email list to catch shows, young professionals events, and special programming</li>
+        <li><strong>Nonprofit newsletters</strong> — Sign up for email lists at organizations you care about (United Way of Central Florida, Give Kids The World, Orlando Science Center, OMA). Gala announcements and volunteer calls come via email first</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">The simple weekly plan</div>
+      <p>You don't need to do everything. Pick <strong>one recurring weekly activity</strong> (Wine Room Thursday, Corona Cigar Friday, Park Avenue Saturday market) and <strong>one monthly event</strong> (1st Thursday at OMA, 3rd Thursday gallery hop, a charity event). Consistency beats quantity — being a familiar face in one or two places builds deeper connections than being a stranger everywhere.</p>
+    </div>
+  </div>
+
+  <div class="guide-footer">
+    <p>"Show up where interesting people gather. Have something going on in your own life worth talking about. Be genuinely curious about theirs. The rest takes care of itself."</p>
+    <p class="note">Curated for Orlando, FL · September 2026</p>
+  </div>
+</div>
